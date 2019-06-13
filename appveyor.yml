@@ -28,9 +28,9 @@ environment:
 
 
   matrix:
-    - TARGET: HASWELL
+    # - TARGET: HASWELL
     - TARGET: SANDYBRIDGE
-    - TARGET: NEHALEM
+    # - TARGET: NEHALEM
 
 build_script:
   - cd OpenBLAS
@@ -49,7 +49,6 @@ test_script:
 
 artifacts:
   - path: OpenBLAS/build/lib/*
-
 
 deploy:
   description: 'OpenBLAS compiled for R'
